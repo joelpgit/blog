@@ -4,4 +4,5 @@
 <br>
 <%= link_to "Read Post", post %>
 <% end %>
-<%= will_paginate @posts %>
+<br><br>
+<%= will_paginate @posts, previous_label: "Older", next_lable: "Newer", inner_window: 1, outer_window: 0 %>
